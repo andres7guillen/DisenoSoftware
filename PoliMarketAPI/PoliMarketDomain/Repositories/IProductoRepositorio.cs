@@ -9,6 +9,7 @@ namespace PoliMarketDomain.Repositories;
 
 public interface IProductoRepositorio
 {
+    public Task<Producto> Guardar(Producto producto);
     public Task<List<Producto>> ObtenerTodos();
     public Task<Producto> ObtenerPorId(Guid idProducto);
 }

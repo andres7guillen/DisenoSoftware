@@ -1,10 +1,4 @@
 ﻿using CSharpFunctionalExtensions;
-using PoliMarketDomain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PoliMarketDomain.Entidades;
 
@@ -15,6 +9,8 @@ public class Vendedor
     public string Cedula { get; set; } = string.Empty;
     public string Telefono { get; set; } = string.Empty;
     public string Correo { get; set; } = string.Empty;
+    public List<Venta> Ventas { get; set; }
+    public List<Pedido> Pedidos { get; set; }
 
     private Vendedor(Guid conId, string conNombre, string conCedula, string conTelefono, string conCorreo)
     {
