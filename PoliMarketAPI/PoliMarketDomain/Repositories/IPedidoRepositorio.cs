@@ -6,6 +6,6 @@ public interface IPedidoRepositorio
 {
     public Task<Pedido> Guardar(Pedido pedido);
     public Task<Pedido> ActualizarPedido(Pedido pedido);
-    public Task<Pedido> ObtenerPorI(Guid idPedido);
+    public Task<Pedido> ObtenerPorId(Guid idPedido);
     public Task<List<Pedido>> ObtenerPorCliente(Guid idCliente);
 }

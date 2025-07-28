@@ -12,4 +12,5 @@ public interface IVentaServicio
 {
     public Task<Result<Venta>> RegistrarVenta(Guid pedidoId);
     public Task<Result<List<Venta>>> ConsultarVentas();
+    public Task<Result<List<Venta>>> ObtenerPorVendedor(Guid idVendedor);
 }

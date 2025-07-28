@@ -1,4 +1,5 @@
 ﻿using CSharpFunctionalExtensions;
+using PoliMarketDomain.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ public class Cliente
     public string Correo { get; set; } = string.Empty;
     public string Telefono { get; set; } = string.Empty;
     public string Direccion { get; set; } = string.Empty;
+    public List<Pedido> Pedidos { get; set; }
 
     private Cliente(Guid conId, string conNombre, string conApellido, string conCorreo, string conTelefono, string conDireccion)
     {
